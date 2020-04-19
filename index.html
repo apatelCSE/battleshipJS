@@ -2,19 +2,24 @@
 
 <head>
     <title>Battleship</title>
+    <h1>Battleship</h1>
 
     <meta charset="UTF-8" />
 
-    <style>
-        #gameScreen {
-            border: 1px solid black;
-        }
-    </style>
 </head>
 
 <body>
-    <canvas id="gameScreen" width="800" height="600"></canvas>
+    <!-- Load Babel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.18.1/babel.min.js"></script>
+    <div id="gameContainer">
+        <canvas
+            id="gameCanvas"
+            width="800"
+            height="800"
+        />
+    </div>
 
+    <!--Remember, every script needs to have type="text/babel" to transpile-->
     <script src="index.js"></script>
 
 </body>
